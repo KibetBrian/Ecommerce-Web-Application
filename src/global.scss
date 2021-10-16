@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+$fontFamily: 'Open Sans', sans-serif;
+$matte-black: #171717;
+
+@mixin for-phone-only {
+    @media (max-width: 480px){@content;}
+}
+@mixin for-phone-min-width {
+    @media (min-width: 480px){@content;}
+}

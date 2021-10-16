@@ -1,0 +1,18 @@
+.response
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    button 
+    {
+        width: 70px;
+        height: 40px;
+        background-color: #003087;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}

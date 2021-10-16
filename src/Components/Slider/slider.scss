@@ -1,0 +1,121 @@
+@import '../../global.scss';
+.sliderContainer 
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    .arrowBack 
+    {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        font-size: 50px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .arrowForward 
+    {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        font-size: 50px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .sliderWrapper 
+    {
+        height: 100%;
+        display: flex;
+        transition: all 1.5s ease;
+
+        .slide 
+        {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+
+            .slideLeft 
+            {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 10%;
+                
+                h6 
+                {
+                    font-size: 12px;
+                    position: relative;
+
+                    &::before
+                    {
+                        content: '';
+                        position: absolute;
+                        width: 10%;
+                        height: 1px;
+                        background-color: $matte-black;
+                        margin-bottom: -2px;
+                        bottom: 0;
+                    }
+                } 
+                h1 
+                {
+                    line-height: 59px;
+                    font-size: 59px;
+                    margin-top: 20px;
+                }
+                .buttonContainer 
+                {
+                    margin-top: 40px;
+                    button 
+                    {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 120px;
+                        border-radius: 0;
+                        height: 45px;
+                        background-color: $matte-black;
+                        color: #fff; 
+                        border: none;    
+                        font-size: 16px; 
+                        cursor: pointer; 
+
+                        &:active
+                        {
+                            outline: none;
+                        }
+
+                        .arrowRight 
+                        {
+                            margin-top: 4px;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+            }
+            .slideRight 
+            {
+                flex: 1;    
+                display: flex;
+                align-items: center;  
+                height: 100%;          
+                img 
+                {
+                    padding: 40px;
+                    height: 80%;
+                }
+            }
+        }
+    }
+}

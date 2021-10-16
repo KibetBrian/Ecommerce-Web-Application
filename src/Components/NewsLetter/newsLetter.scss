@@ -1,0 +1,50 @@
+.newsLetter 
+{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fce4ec;
+    justify-content: center;
+
+    h1 
+    {
+        font-size: 60px;
+    }
+    p 
+    {
+        margin-top: 10px;
+    }
+    
+    .inputContainer 
+    {
+        display: flex;
+        width: 50%;        
+        height: 12%;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        input 
+        {
+            flex: 9;
+            border: navajowhite;
+            padding-left: 10px;
+            height: 100%;
+
+            &:focus
+            {
+                outline: none;
+            }
+        }
+        .sendIcon 
+        {
+            flex: 1;
+            font-size: unquote($string: "rrr");
+            background-color: #f8bbd0;
+            height: 100%;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+
+}

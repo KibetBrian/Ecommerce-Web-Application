@@ -1,0 +1,39 @@
+.productList 
+{
+    .productListTitle 
+    {
+        margin-left: 20px;
+    }
+    .filterContainer
+    {
+        display: flex;
+        justify-content: space-between;
+
+        .leftFilterContainer
+        {
+            margin: 20px;
+
+            .select 
+            {
+                border-radius: none;
+                padding: 10px;
+                background-color: transparent;
+                border: 1px solid gray;
+                margin-right: 10px;
+            }
+        }
+        .rightFilterContainer
+        {
+            margin: 20px;
+
+            .select 
+            {
+                border-radius: none;
+                padding: 10px;
+                background-color: transparent;
+                border: 1px solid gray;
+                margin-right: 10px;
+            }
+        }
+    }
+}

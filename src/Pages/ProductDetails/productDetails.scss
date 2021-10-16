@@ -1,0 +1,194 @@
+@import '../../global.scss';
+.productDetails
+{
+    .productDetailsWrapper 
+    {
+        display: flex;
+
+        .productDetailsLeft
+        {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            img 
+            {
+                width: 70%;
+                height: 80%;
+                object-fit: cover;
+                border: 1px solid gray;
+            }
+        }
+        .productDetailsRight 
+        {
+            flex: 1;
+            .productName
+            {
+                margin-top: 10%;
+            }    
+            .productPrice 
+            {
+                margin-top: 8px;
+                color: black;
+                font-size: 17px;
+                font-weight: bold;
+            }     
+            .colorContainer 
+            {
+                margin-top: 15px;
+                display: flex;
+                p 
+                {
+                    font-weight: bold;
+                    margin-top: 8px;
+                }
+                .colors 
+                {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    margin-top: 10px;
+                    height: 30px;
+                    div
+                    {
+                        margin-right: 5px;
+                        &:first-child 
+                        {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                        }
+                        &:nth-child(2)
+                        {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                        }
+                        &:last-child 
+                        {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .size 
+                {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-left: 20%;
+                    height: 30px;
+                    p 
+                    {
+                        font-weight: bold;
+                    }
+                    .productSizeSelect 
+                    {
+                        margin-top: 10px;
+                        padding: 5px;
+                        border-radius: 0;
+                        border: 1px solid gray;
+                    }
+                }
+
+            }  
+
+            .quantityContainer 
+            {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+
+                .quantity 
+                {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    p 
+                    {
+                        font-weight: bold;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+
+                    input 
+                    {
+                        width: 50%;
+                        padding: 7px;
+                    }
+                    .quantityDisplay
+                    {
+                        display: flex;
+                        .removeContainer
+                        {
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .quantityBox 
+                        {
+                            width: 40px;
+                            height:30px;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid $matte-black;
+                        }
+                        .addContainer 
+                        {
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+                
+            }
+            .addToCartButtonContainer
+            {
+                margin-top: 30px;
+                display: flex;
+
+                button 
+                {
+                    background-color: black;
+                    color: #fff;
+                    width: 50%;
+                    border: none;
+                    height: 40px;
+                    cursor: pointer;
+                }
+                .wishListContainer
+                {
+                    width: 40px;
+                    height: 40px;
+                    background-color: black;
+                    margin-left: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    .wishListIcon
+                    {
+                        color: #fff;
+                    }
+                }
+            }
+            .productInfo
+            {
+                margin-top: 20px;
+
+                .productInfoTitle
+                {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

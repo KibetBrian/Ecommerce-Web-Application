@@ -1,0 +1,246 @@
+.cart 
+{
+    .cartWrapper 
+    {
+        width: 100%;
+        h1 
+        {
+            text-align: center;
+        }
+        .buttonsWrapper 
+        {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+
+            .buttonContainer 
+            {
+                button 
+                {
+                    background-color: #000;
+                    color: #fff;
+                    border: 1px solid #000;
+                    height: 40px;
+                    padding: 3px 10px;
+                    cursor: pointer;                  
+                }
+                .secondButton 
+                {
+                    background-color: #fff;
+                    color: #000;
+                }
+               
+            }
+        }
+        .productsSummaryWrapper 
+        {
+            display: flex;
+            margin-top: 20px;
+            padding: 20px;
+
+        .productSummaryLeft 
+        {
+            flex: 3;
+            .productDetailsContainer 
+            {
+                display: flex;
+                border-bottom: 1px solid gray;
+                margin-top: 10px;
+
+
+                .imageContainer 
+                {
+                    flex: 0.5;
+                    img 
+                    {
+                        width: 100%;
+                    }
+                }
+                .detailsContainer 
+                {
+                    flex: 1;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .productName 
+                    {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+                        p 
+                        {
+                            margin-left: 5px;
+                        }
+                    }
+                    .productSize
+                    {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+                        p 
+                        {
+                            margin-left: 5px;
+                        }
+                    }
+                    .color 
+                    {
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        margin-top: 10px;
+                    }
+                    .productId
+                    {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+                        p 
+                        {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                .countContainer 
+                {
+                    flex: 1;
+                    margin-top: 20px;
+                    .quantity 
+                    {
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid gray;
+                        width: 20%;
+                        padding: 5px 5px;
+
+                        .addIcon 
+                        {
+                            cursor: pointer;
+                        }
+                        .removeIcon 
+                        {
+                            cursor: pointer;
+                        }
+
+                        h3 
+                        {
+                            margin: 0 10px;
+                        }
+                    }
+                    .amount
+                    {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 30px;
+                        .moneyIcon 
+                        {
+                            font-size: 26px;
+                        }
+                        p 
+                        {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        .productSummaryRight 
+        {
+            flex: 1;
+            border: 1px solid gray;
+            border-radius: 3px;
+            height: 400px;
+            .productSummaryTitleContainer
+            {
+                display: flex;
+                justify-content: center;
+            }
+            .subtotal
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p 
+                {
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    padding: 10px 10px;
+                    .moneyIcon
+                    {
+                        font-size: 24px;
+                    }
+                }
+            }
+            .shipping
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p 
+                {
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    padding: 10px 10px;
+                    .moneyIcon
+                    {
+                        font-size: 24px;
+                    }
+                }
+            }
+            .total
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: bold;
+                p 
+                {
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    padding: 10px 10px;
+                    .moneyIcon
+                    {
+                        font-size: 24px;
+                    }
+                }
+            }
+            .discount
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p 
+                {
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    padding: 10px 10px;
+                    .moneyIcon
+                    {
+                        font-size: 24px;
+                    }
+                }
+            }
+            .checkOutButtonContainer 
+            {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                button 
+                {
+                    display: flex;
+                    align-items: center;
+                    border: none;
+                    color: #fff;
+                    height: 40px;
+                    padding: 0 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    }
+}

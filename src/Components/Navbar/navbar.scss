@@ -1,0 +1,158 @@
+@import '../../global.scss';
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .left
+    {
+        flex: 1;
+        @include for-phone-only 
+        {
+           flex: 0.1;
+        }   
+        .logoContainer 
+        {
+            h1 
+            {
+                font-size: 32px;
+                font-weight: 700;
+            }
+            h2 
+            {
+                font-weight: 350;
+                font-size: 20px;
+            }
+            @include for-phone-only 
+            {
+                h1 
+                {
+                    font-size: 20px;
+                }
+                h2 
+                {
+                    font-size: 14px;
+                }
+            }   
+        }
+    }
+    .center 
+    {
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        
+        @include for-phone-only 
+        {
+            display: none;
+        }   
+        
+        p 
+        {
+            cursor: pointer; 
+            font-weight: 600;  
+            
+            &:first-child
+            {
+                color: #707070;
+            }
+            &:hover
+            {
+                color: #707070;
+            }
+        }
+    }
+    .right
+    {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+        .rightLeft 
+        {
+            flex: 1;
+            display: flex;
+            border-bottom: 2px solid black;
+            align-items: center;
+            justify-content: center;
+            i 
+            {
+                margin-right: 10px;
+            }
+
+            input 
+            {
+                border: none;
+                height: 80%;
+                width: 100%;
+                &:focus
+                {
+                    outline: none;
+                }
+                &::-moz-placeholder
+                 {
+                    color: #000000;
+                 }  
+                &::-webkit-input-placeholder 
+                {
+                    color: #000000;
+                    font-size: 16px;
+                    font-weight: 500;
+                }      
+                @include for-phone-only 
+                {
+                    width: 100%;
+                }          
+            }
+        }
+        .rightCenter
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-left: 20px;
+            margin-right: 10px;
+            flex: 1;
+            
+            i 
+            {
+                font-size: 26px;
+                margin-right: 10px;
+            }
+            @include for-phone-only 
+            {
+                display: none;
+            }   
+        }
+        .rightRight
+        {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+            .cartBadge 
+            {
+                cursor: pointer;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            .shoppingCartIcon 
+            {
+                font-size: 28px;
+            }
+            @include for-phone-min-width 
+            {
+                .menuIcon 
+                {
+                    display: none; 
+                }
+            }
+            .menuIcon 
+            {
+                font-size: 28px;
+            }
+        }
+    }
+}
